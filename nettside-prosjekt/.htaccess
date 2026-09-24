@@ -1,0 +1,6 @@
+# Server-safe deployment for Apache
+Options -Indexes
+DirectoryIndex index.html index.php
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+</IfModule>
